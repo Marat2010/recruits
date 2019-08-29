@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная - Выбор кто Вы?</title>
+</head>
+<body>
+    <h1>Ситх или рекрут?</h1>
+    {% for r in recr %}
+    <div>
+        <h2>{{ r.name }}</h2>
+        <p>{{ r.age }}</p>
+        <p>{{ r.email }}</p>
+        <p>{{ r.planet }}</p>
+    </div>
+    {% endfor %}
+
+</body>
+</html>
