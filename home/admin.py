@@ -23,15 +23,11 @@ class TestsAdmin(admin.ModelAdmin):
 
 admin.site.register(Planets)
 admin.site.register(Recruits, RecruitsAdmin)
+# admin.site.register(Sith)
 admin.site.register(Sith, SithAdmin)
+
 admin.site.register(Tests, TestsAdmin)
 
-
-
-
-#admin.site.register(Recruits)
-#admin.site.register(Sith, Tests)
-#admin.site.register(Tests)
 
 
 
