@@ -8,7 +8,7 @@ from .forms import RecruitsForm
 
 
 class RecruitsCreateView(CreateView):
-    template_name = 'home/create.html'
+    template_name = 'si/create.html'
     form_class = RecruitsForm
     success_url = reverse_lazy('index')
 
@@ -23,14 +23,14 @@ def by_planet(request, planet_id):
     planets = Planets.objects.all()
     current_planet = Planets.objects.get(pk=planet_id)
     context = {'recrs': recrs, 'planets': planets, 'current_planet': current_planet}
-    return render(request, 'home/by_planet.html', context)
+    return render(request, 'si/by_planet.html', context)
 
 
 def index(request):
     recrs = Recruits.objects.all()
     planets = Planets.objects.all()
     context = {'recrs': recrs, 'planets': planets}
-    return render(request, 'home/index.html', context)
+    return render(request, 'si/index.html', context)
 
 
 

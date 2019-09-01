@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0002_auto_20190826_2123'),
+        ('si', '0002_auto_20190826_2123'),
     ]
 
     operations = [
@@ -50,7 +50,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='recruits',
             name='planet',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.PROTECT, to='home.Planets', verbose_name='Планета'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.PROTECT, to='si.Planets', verbose_name='Планета'),
         ),
         migrations.AlterField(
             model_name='sith',
@@ -60,7 +60,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='sith',
             name='planet',
-            field=models.ForeignKey(on_delete=models.SET('0'), to='home.Planets', verbose_name='Планета'),
+            field=models.ForeignKey(on_delete=models.SET('0'), to='si.Planets', verbose_name='Планета'),
         ),
         migrations.AlterField(
             model_name='tests',

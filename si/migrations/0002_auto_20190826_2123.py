@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0001_initial'),
+        ('si', '0001_initial'),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='recruits',
             name='planet',
-            field=models.ForeignKey(on_delete=models.SET('hehe'), related_name='entries', to='home.Planets'),
+            field=models.ForeignKey(on_delete=models.SET('hehe'), related_name='entries', to='si.Planets'),
         ),
     ]
