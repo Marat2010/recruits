@@ -6,11 +6,11 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{% static 'si/style.css' %}">
 
-    <title>{% block title %}Главная - Выбор кто Вы?{% endblock %}</title>
+    <title>{% block title %}Главная - Список рекрутов{% endblock %}</title>
 </head>
 <body>
     <header>
-        <h1>Ситх или рекрут?</h1>
+        <h1>{% block header %}Список рекрутов{% endblock %}</h1>
     </header>
     <nav>
         <a href="{% url 'index' %}">Главная</a>
