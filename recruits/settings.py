@@ -25,7 +25,10 @@ SECRET_KEY = '6mbxjw*4ji1xbnszgelxw!__s^)vkhj=#yxapt95*@x+r7fnug'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1',
+                 'localhost',
+                 '.localhost.run',
+                 '.ngrok.io']
 
 
 # Application definition
@@ -38,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'si.apps.SiConfig',
+    'weatherBot.apps.WeatherBotConfig',
 ]
 
 MIDDLEWARE = [
